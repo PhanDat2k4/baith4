@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bai2a</title>
+  <link rel="stylesheet" href="../css/bootstrap.min.css" />
+  <script src="../css/bootstrap.bundle.min.js"></script>
+  <style>
+    /* Đảm bảo rằng cột Expiry Date sẽ nằm trên cùng */
+    #expiryDate {
+      margin-top: 10px; /* Thêm khoảng cách từ trên xuống */
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2 class="my-4">Checkout</h2>
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Product</th>
+          <th>Price</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            Product 1
+            <p class="text-secondary">Lorem ipsum dolor sit amet</p>
+          </td>
+          <td>$120</td>
+        </tr>
+        <tr>
+          <td>
+            Product 2
+            <p class="text-secondary">Lorem ipsum dolor sit amet</p>
+          </td>
+          <td>$120</td>
+        </tr>
+        <tr>
+          <td>Total</td>
+          <td>$320</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h3 class="my-4">Credit Card Details</h3>
+    <form>
+      <div class="row">
+        <div class="col-md-6">
+          <label for="cardHolder" class="form-label">Card Holder</label>
+          <input
+            type="text"
+            class="form-control"
+            id="cardHolder"
+            placeholder="Card Holder"
+          />
+        </div>
+        <div class="col-md-6"> <!-- Sửa thành col-md-6 để đảm bảo Expiry Date và các trường khác nằm trên cùng -->
+          <label for="expiryDate" class="form-label">Expiry Date</label>
+          <input
+            type="text"
+            class="form-control"
+            id="expiryDate"
+            placeholder="MM/YY"
+          />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <label for="cardNumber" class="form-label">Card Number</label>
+          <input
+            type="text"
+            class="form-control"
+            id="cardNumber"
+            placeholder="Card Number"
+          />
+        </div>
+        <div class="col-md-6">
+          <label for="cvv" class="form-label">CVV</label>
+          <input
+            type="text"
+            class="form-control"
+            id="cvv"
+            placeholder="CVV"
+          />
+        </div>
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+  </div>
+</body>
+</html>

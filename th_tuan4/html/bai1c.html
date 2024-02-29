@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bai1c</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <style>
+      .hover-state:hover {
+        background-color: #f8f9fa;
+      }
+      .table img {
+        margin-right: 10px; /* Thêm khoảng cách bên phải của ảnh */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Title</th>
+            <th>Status</th>
+            <th>Position</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <img
+                style="float: left"
+                src="../image/images.jpg"
+                class="rounded-circle"
+                alt=""
+                width="50px"
+              />
+              John Doe
+              <p class="text-secondary">john.doe@gmail.com</p>
+            </td>
+            <td>
+              Software engineerp
+              <p class="text-secondary">IT department</p>
+            </td>
+
+            <td><p class="badge rounded-pill bg-success">Active</p></td>
+            <td>Senior</td>
+            <td><button class="btn btn-outline-primary">EDIT</button></td>
+          </tr>
+          <tr>
+            <td>
+              <img
+                style="float: left"
+                src="../image/images.jpg"
+                class="rounded-circle"
+                alt=""
+                width="50px"
+              />
+              Alex Ray
+              <p class="text-secondary">alex.ray@gmail.com</p>
+            </td>
+            <td>
+              Consultant
+              <p class="text-secondary">Finance</p>
+            </td>
+
+            <td><p class="badge rounded-pill bg-primary">Onboarding</p></td>
+            <td>Junior</td>
+            <td><button class="btn btn-outline-primary">EDIT</button></td>
+          </tr>
+          <tr>
+            <td>
+              <img
+                style="float: left"
+                src="../image/images.jpg"
+                class="rounded-circle"
+                alt=""
+                width="50px"
+              />
+              Kate Hunington
+              <p class="text-secondary">kate.hunnington@gmail.com</p>
+            </td>
+            <td>
+              Designer
+              <p class="text-secondary">UI/UX</p>
+            </td>
+
+            <td>
+              <p class="badge rounded-pill bg-warning text-dark">Awaiting</p>
+            </td>
+            <td>Junior</td>
+            <td><button class="btn btn-outline-primary">EDIT</button></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <script src="../css/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
